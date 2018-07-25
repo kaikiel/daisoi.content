@@ -18,4 +18,49 @@
       directory="static"
       />
 
+  <browser:page
+      name="contact_us"
+      for="*"
+      template="templates/contact_us_view.pt"
+      class=".views.ContactUsView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="performance_listing"
+      for="*"
+      template="templates/folder_performance_view.pt"
+      class=".folder_views.FolderPerformanceView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="news_listing"
+      for="*"
+      template="templates/folder_news_view.pt"
+      class=".folder_views.FolderNewsView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="news_view"
+      for="*"
+      template="templates/news_view.pt"
+      class=".views.NewsView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="plone_root_view"
+      for="*"
+      template="templates/plone_root_view.pt"
+      class=".views.PloneRootView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
 </configure>

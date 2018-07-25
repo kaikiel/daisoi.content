@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="daisoi.content">
+
+    <browser:viewlet
+        name="footer_viewlet"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+        template="templates/footer.pt"
+        class=".viewlets.FooterViewlet"
+        layer="zope.interface.Interface"
+        permission="zope2.View"
+    />
+
+
+</configure>
+
