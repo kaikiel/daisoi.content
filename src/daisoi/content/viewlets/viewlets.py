@@ -4,9 +4,13 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone import api
 from zope.component import getMultiAdapter
 from Products.CMFPlone.utils import getSiteLogo
+from daisoi.content.browser.views import GeneralMethod
 
 
-class FooterViewlet(base.ViewletBase):
+class TopViewlet(base.ViewletBase, GeneralMethod):
+    pass
+
+class FooterViewlet(base.ViewletBase, GeneralMethod):
     def pdb(self):
         import pdb;pdb.set_trace()
 

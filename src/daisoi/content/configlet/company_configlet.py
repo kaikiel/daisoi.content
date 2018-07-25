@@ -23,7 +23,7 @@ class IInfo(model.Schema):
 
     address = schema.Text(
         title=_(u'Address'),
-        description=_(u'Display on Footer and Contact Us Page'),
+        description=_(u'Display on Top and Footer and Contact Us Page'),
         required=False
     )
 
@@ -35,7 +35,7 @@ class IInfo(model.Schema):
 
     phone = schema.Text(
         title=_(u'Phone'),
-        description=_(u'Display on Index and Footer and Contact Us Page'),
+        description=_(u'Display on Index and Top and Footer and Contact Us Page'),
         required=False,
     )
 
@@ -51,6 +51,12 @@ class IInfo(model.Schema):
         required=False,
     )
     
+    fb_link = schema.TextLine(
+        title=_(u'Facebook Link'),
+        description=_(u'Displan on Top'),
+        required=False,
+    )
+
     @invariant
     def email_invariant(data):
         com_email = data.email

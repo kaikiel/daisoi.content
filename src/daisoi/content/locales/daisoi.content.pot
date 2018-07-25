@@ -1,0 +1,98 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-07-25 10:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: daisoi.content\n"
+
+#: ../configlet/company_configlet.py:25
+msgid "Address"
+msgstr ""
+
+#: ../configlet/company_configlet.py:19
+msgid "Company Description"
+msgstr ""
+
+#: ../configlet/company_configlet.py:77
+msgid "Compony Info"
+msgstr ""
+
+#: ../configlet/company_configlet.py:56
+msgid "Displan on Top"
+msgstr ""
+
+#: ../configlet/company_configlet.py:20
+msgid "Display on Footer"
+msgstr ""
+
+#: ../configlet/company_configlet.py:32
+msgid "Display on Footer and Contact Us Page"
+msgstr ""
+
+#: ../configlet/company_configlet.py:38
+msgid "Display on Index and Top and Footer and Contact Us Page"
+msgstr ""
+
+#: ../configlet/company_configlet.py:26
+msgid "Display on Top and Footer and Contact Us Page"
+msgstr ""
+
+#: ../configlet/company_configlet.py:31
+msgid "E-Mail"
+msgstr ""
+
+#: ../configlet/company_configlet.py:49
+msgid "E-Mail (Receive)"
+msgstr ""
+
+#: ../configlet/company_configlet.py:55
+msgid "Facebook Link"
+msgstr ""
+
+#: ../configlet/company_configlet.py:43
+msgid "Fax"
+msgstr ""
+
+#: ../configure.zcml:32
+msgid "Installs the daisoi.content add-on."
+msgstr ""
+
+#: ../configlet/company_configlet.py:37
+msgid "Phone"
+msgstr ""
+
+#: ../configlet/company_configlet.py:69
+msgid "Receive Email is not valid!"
+msgstr ""
+
+#: ../configure.zcml:41
+msgid "Uninstalls the daisoi.content add-on."
+msgstr ""
+
+#: ../configlet/company_configlet.py:50
+msgid "Used to receive E-Mail from Contact Us Page"
+msgstr ""
+
+#: ../configlet/company_configlet.py:67
+msgid "Your Email is not valid!"
+msgstr ""
+
+#: ../configure.zcml:32
+msgid "daisoi.content"
+msgstr ""
+
+#: ../configure.zcml:41
+msgid "daisoi.content (uninstall)"
+msgstr ""

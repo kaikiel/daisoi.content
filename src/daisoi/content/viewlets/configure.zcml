@@ -6,6 +6,15 @@
     i18n_domain="daisoi.content">
 
     <browser:viewlet
+        name="top_viewlet"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+        template="templates/top_viewlet.pt"
+        class=".viewlets.TopViewlet"
+        layer="zope.interface.Interface"
+        permission="zope2.View"
+    />
+
+    <browser:viewlet
         name="footer_viewlet"
         manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
         template="templates/footer.pt"
