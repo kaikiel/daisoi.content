@@ -1,0 +1,4 @@
+graft src/daisoi
+graft docs
+include *.rst
+global-exclude *.pyc
