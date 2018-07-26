@@ -17,6 +17,7 @@
   <include package=".viewlets" />
   <include package=".index" />
   <include package=".configlet" />
+  <include package=".portlets" />
 
   <include file="permissions.zcml" />
 

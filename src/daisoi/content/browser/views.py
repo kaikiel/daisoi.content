@@ -16,13 +16,39 @@ class GeneralMethod(BrowserView):
          'fb_link':api.portal.get_registry_record('daisoi.content.configlet.company_configlet.IInfo.fb_link', default='')}
         return info
 
+    def getImgSubject(self):
+        portal_catalog = getToolByName(self.context, 'portal_catalog')
+        index = portal_catalog.Indexes['img_subject']
+        imgSubjectList = {}
+        for key in index.uniqueValues():
+            subDict = {key:{'Title':key,
+                            'getURL':'{}/performance?img_subject={}'.format(self.context.portal_url(), key),
+                            'absolute_url':'{}/performance?img_subject={}'.format(self.context.portal_url(), key),
+                            'children':[]}
+                      }
+            imgSubjectList.update(subDict)
+        return imgSubjectList
+
+    def getNewsSubject(self):
+        portal_catalog = getToolByName(self.context, 'portal_catalog')
+        index = portal_catalog.Indexes['news_subject']
+        newsSubjectList = {}
+        for key in index.uniqueValues():
+            subDict = {key:{'Title':key,
+                            'getURL':'{}/news?news_subject={}'.format(self.context.portal_url(), key),
+                            'absolute_url':'{}/news?news_subject={}'.format(self.context.portal_url(), key),
+                            'children':[]}
+                      }
+            newsSubjectList.update(subDict)
+        return newsSubjectList
+
 
 class ContactUsView(GeneralMethod):
     def pdb(self):
         import pdb;pdb.set_trace()
 
 
-class NewsView(BrowserView):
+class NewsView(GeneralMethod):
     pass
 
 

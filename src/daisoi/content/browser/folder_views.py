@@ -6,9 +6,10 @@ from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
 from plone.app.contenttypes.browser.folder import FolderView
 from plone.app.contentlisting.interfaces import IContentListing
+from daisoi.content.browser.views import GeneralMethod
 
 
-class FolderPerformanceView(FolderView):
+class FolderPerformanceView(FolderView, GeneralMethod):
 
     @property
     def img_subject(self):
@@ -25,14 +26,6 @@ class FolderPerformanceView(FolderView):
         b_size = getattr(self.request, 'b_size', None)\
             or getattr(self.request, 'limit_display', None) or 6
         return int(b_size)
-
-    def getImgSubjects(self):
-        portal_catalog = getToolByName(self.context, 'portal_catalog')
-        index = portal_catalog.Indexes['img_subject']
-        imgSubjectList = []
-        for key in index.uniqueValues():
-            imgSubjectList.append(key)
-        return imgSubjectList
 
     def results(self, **kwargs):
         """Return a content listing based result set with contents of the
@@ -71,6 +64,11 @@ class FolderPerformanceView(FolderView):
 class FolderNewsView(FolderView):
 
     @property
+    def searchableText(self):
+        searchableText = getattr(self.request, 'searchableText', '')
+        return searchableText
+
+    @property
     def news_subject(self):
         news_subject = getattr(self.request, 'news_subject', '')
         return news_subject
@@ -85,14 +83,6 @@ class FolderNewsView(FolderView):
         b_size = getattr(self.request, 'b_size', None)\
             or getattr(self.request, 'limit_display', None) or 3
         return int(b_size)
-
-    def getNewsSubjects(self):
-        portal_catalog = getToolByName(self.context, 'portal_catalog')
-        index = portal_catalog.Indexes['news_subject']
-        imgSubjectList = []
-        for key in index.uniqueValues():
-            imgSubjectList.append(key)
-        return imgSubjectList
 
     def results(self, **kwargs):
         """Return a content listing based result set with contents of the
@@ -119,6 +109,9 @@ class FolderNewsView(FolderView):
         
         if self.news_subject:
             kwargs['news_subject'] = self.news_subject
+
+        if self.searchableText:
+            kwargs['SearchableText'] = self.searchableText
 
         listing = aq_inner(self.context).restrictedTraverse(
             '@@folderListing', None)

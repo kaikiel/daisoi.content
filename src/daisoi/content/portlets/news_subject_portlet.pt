@@ -1,0 +1,7 @@
+<div class="widget widget_tags margin-top-55">
+  <h2 class="widget-title"><span>TAGS</span></h2>
+  <div class="tags-list" tal:define="newsSubject view/getNewsSubject"
+                         tal:repeat="sub newsSubject">
+    <a href="${python: newsSubject[sub]['getURL']}">${sub}</a>
+  </div>
+</div>

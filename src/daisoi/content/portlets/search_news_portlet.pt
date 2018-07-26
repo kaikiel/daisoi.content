@@ -1,0 +1,6 @@
+<div class="widget widget_search">
+  <form action="${view/context/portal_url}/news" method="get" role="search" class="search-form style-1">
+    <input type="search" class="search-field" placeholder="Search..." value="" name="searchableText" title="Search for">
+    <button class="search-submit" type="submit" title="Search">Search</button>
+  </form>
+</div><!-- /.widget_search -->

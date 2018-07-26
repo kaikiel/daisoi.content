@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-07-25 10:12+0000\n"
+"POT-Creation-Date: 2018-07-26 09:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,18 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: daisoi.content\n"
+
+#: ../portlets/img_subject_portlet.py:31
+msgid "Add Img_Subject Portlet"
+msgstr ""
+
+#: ../portlets/news_subject_portlet.py:31
+msgid "Add News_Subject Portlet"
+msgstr ""
+
+#: ../portlets/search_news_portlet.py:31
+msgid "Add Search_News Portlet"
+msgstr ""
 
 #: ../configlet/company_configlet.py:25
 msgid "Address"
@@ -57,6 +69,18 @@ msgstr ""
 msgid "E-Mail (Receive)"
 msgstr ""
 
+#: ../portlets/img_subject_portlet.py:39
+msgid "Edit Img_Subject Portlet"
+msgstr ""
+
+#: ../portlets/news_subject_portlet.py:39
+msgid "Edit News_Subject Portlet"
+msgstr ""
+
+#: ../portlets/search_news_portlet.py:39
+msgid "Edit Search_News Portlet"
+msgstr ""
+
 #: ../configlet/company_configlet.py:55
 msgid "Facebook Link"
 msgstr ""
@@ -65,8 +89,26 @@ msgstr ""
 msgid "Fax"
 msgstr ""
 
-#: ../configure.zcml:32
+#: ../portlets/img_subject_portlet.py:22
+#: ../profiles/default/portlets.xml
+msgid "Img_Subject"
+msgstr ""
+
+#: ../profiles/default/portlets.xml
+msgid "Img_Subject Description"
+msgstr ""
+
+#: ../configure.zcml:33
 msgid "Installs the daisoi.content add-on."
+msgstr ""
+
+#: ../portlets/news_subject_portlet.py:22
+#: ../profiles/default/portlets.xml
+msgid "News_Subject"
+msgstr ""
+
+#: ../profiles/default/portlets.xml
+msgid "News_Subject Description"
 msgstr ""
 
 #: ../configlet/company_configlet.py:37
@@ -77,7 +119,12 @@ msgstr ""
 msgid "Receive Email is not valid!"
 msgstr ""
 
-#: ../configure.zcml:41
+#: ../portlets/search_news_portlet.py:22
+#: ../profiles/default/portlets.xml
+msgid "Search_News"
+msgstr ""
+
+#: ../configure.zcml:42
 msgid "Uninstalls the daisoi.content add-on."
 msgstr ""
 
@@ -89,10 +136,10 @@ msgstr ""
 msgid "Your Email is not valid!"
 msgstr ""
 
-#: ../configure.zcml:32
+#: ../configure.zcml:33
 msgid "daisoi.content"
 msgstr ""
 
-#: ../configure.zcml:41
+#: ../configure.zcml:42
 msgid "daisoi.content (uninstall)"
 msgstr ""

@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="daisoi.content">
+
+     <plone:portlet
+         name="daisoi.content.Img_Subject"
+         interface=".img_subject_portlet.IImg_Subject"
+         assignment=".img_subject_portlet.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".img_subject_portlet.Renderer"
+         addview=".img_subject_portlet.AddForm"
+         editview=".img_subject_portlet.EditForm"
+         />
+
+     <plone:portlet
+         name="daisoi.content.News_Subject"
+         interface=".news_subject_portlet.INews_Subject"
+         assignment=".news_subject_portlet.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".news_subject_portlet.Renderer"
+         addview=".news_subject_portlet.AddForm"
+         editview=".news_subject_portlet.EditForm"
+         />
+
+     <plone:portlet
+         name="daisoi.content.Search_News"
+         interface=".search_news_portlet.ISearch_News"
+         assignment=".search_news_portlet.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".search_news_portlet.Renderer"
+         addview=".search_news_portlet.AddForm"
+         editview=".search_news_portlet.EditForm"
+         />
+
+</configure>
+

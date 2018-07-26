@@ -3,6 +3,7 @@ from plone.app.layout.viewlets import common as base
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone import api
 from zope.component import getMultiAdapter
+from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import getSiteLogo
 from daisoi.content.browser.views import GeneralMethod
 
@@ -28,7 +29,19 @@ class FooterViewlet(base.ViewletBase, GeneralMethod):
 
     def getSiteMap(self):
         view = getMultiAdapter((self.context, self.request), name='sitemap_builder_view')
-        data = view.siteMap()['children']
+        siteMap = view.siteMap()['children']
+        data = []
+        for item in siteMap:
+            if item['id'] == 'performance':
+                item_children = self.getImgSubject().values()
+                item['children'] = item_children
+                data.append(item)
+            elif item['id'] == 'news':
+                item_children = self.getNewsSubject().values()
+                item['children'] = item_children
+                data.append(item)
+            else:
+                data.append(item)
         return data
 
     def getTopTabs(self):
