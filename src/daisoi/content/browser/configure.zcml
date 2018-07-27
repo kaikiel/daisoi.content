@@ -21,7 +21,6 @@
   <browser:page
       name="contact_us"
       for="*"
-      template="templates/contact_us_view.pt"
       class=".views.ContactUsView"
       layer="zope.interface.Interface"
       permission="zope2.View"

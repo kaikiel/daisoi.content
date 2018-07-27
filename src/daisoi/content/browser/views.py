@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 from plone import api
 from Products.Five.browser import BrowserView
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from daisoi.content import _
 from Products.CMFCore.utils import getToolByName
+from email.mime.text import MIMEText
 
 
 class GeneralMethod(BrowserView):
@@ -44,8 +46,30 @@ class GeneralMethod(BrowserView):
 
 
 class ContactUsView(GeneralMethod):
-    def pdb(self):
-        import pdb;pdb.set_trace()
+    template = ViewPageTemplateFile('templates/contact_us_view.pt')
+    def __call__(self):
+        request = self.request
+        name = request.get('name')
+        email = request.get('email')
+        message = request.get('message')
+        if name and email and message:
+            try:
+                phone = request.get('phone')
+                subject = getattr(self.request, 'subject', "Contact Daisoi From:"+name)
+                body_str = """Name:{}<br/>Email:{}<br/>Phone:{}<br/>Message:{}""".format(name, email, phone, message)
+                mime_text = MIMEText(body_str, 'html', 'utf-8')
+                api.portal.send_email(
+                    recipient=self.getCompanyInfo['r_email'],
+                    sender=email,
+                    subject="Contact Us",
+                    body=mime_text.as_string(),
+                )
+                api.portal.show_message(message='發送成功!'.decode('utf-8'), request=request)
+            except Exception as ex:
+                print ex
+            current_url = self.request.URL
+            self.request.response.redirect(current_url)
+        return self.template()
 
 
 class NewsView(GeneralMethod):

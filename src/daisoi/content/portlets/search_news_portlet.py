@@ -24,6 +24,10 @@ class Assignment(base.Assignment):
 
 class Renderer(base.Renderer):
     render = ViewPageTemplateFile('search_news_portlet.pt')
+    
+    def searchableText(self):
+        s = getattr(self.request, 'searchableText', '')
+        return s
 
 
 class AddForm(base.AddForm):
