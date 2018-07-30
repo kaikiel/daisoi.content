@@ -18,4 +18,9 @@
     <element value="plone.app.lockingbehavior.behaviors.ILocking" />
     <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
   </property>
+
+  <property name="view_methods">
+    <element value="document_view"/>
+    <element value="login_view" />
+  </property>
 </object>

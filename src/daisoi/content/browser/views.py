@@ -139,3 +139,6 @@ class PloneRootView(GeneralMethod):
         testimonials = api.content.find(context=context, portal_type='Document', sort_on='getObjPositionInParent')
         return testimonials
 
+
+class LoginView(BrowserView):
+    pass
