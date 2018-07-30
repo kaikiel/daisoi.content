@@ -62,4 +62,12 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      name="question_listing"
+      for="*"
+      template="templates/question_listing.pt"
+      class=".folder_views.QuestionListing"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
 </configure>

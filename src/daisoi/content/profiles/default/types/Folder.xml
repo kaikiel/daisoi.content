@@ -16,6 +16,7 @@
     <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
   </property>
   <property name="view_methods">
+    <element value="question_listing"/>
     <element value="performance_listing"/>
     <element value="news_listing"/>
     <element value="album_view"/>
