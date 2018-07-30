@@ -79,4 +79,13 @@
       layer="zope.interface.Interface"
       permission="zope2.View"
       />
+
+  <browser:page
+      name="one_youtube_view"
+      for="*"
+      template="templates/one_youtube_view.pt"
+      class=".views.OneYoutubeView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
 </configure>

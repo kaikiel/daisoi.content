@@ -22,5 +22,6 @@
   <property name="view_methods">
     <element value="document_view"/>
     <element value="login_view" />
+    <element value="one_youtube_view" />
   </property>
 </object>

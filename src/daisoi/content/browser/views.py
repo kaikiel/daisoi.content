@@ -142,3 +142,7 @@ class PloneRootView(GeneralMethod):
 
 class LoginView(BrowserView):
     pass
+
+
+class OneYoutubeView(BrowserView):
+    pass
