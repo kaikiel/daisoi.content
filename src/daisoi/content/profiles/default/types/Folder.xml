@@ -4,7 +4,17 @@
     meta_type="Dexterity FTI"
     name="Folder"
     xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-
+  <property name="behaviors" purge="false">
+    <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
+    <element value="plone.app.content.interfaces.INameFromTitle"/>
+    <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
+    <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
+    <element value="plone.app.dexterity.behaviors.id.IShortName"/>
+    <element value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
+    <element value="plone.app.relationfield.behavior.IRelatedItems"/>
+    <element value="plone.app.dexterity.behaviors.nextprevious.INextPreviousToggle"/>
+    <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
+  </property>
   <property name="view_methods">
     <element value="performance_listing"/>
     <element value="news_listing"/>

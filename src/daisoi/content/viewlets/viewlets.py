@@ -8,6 +8,10 @@ from Products.CMFPlone.utils import getSiteLogo
 from daisoi.content.browser.views import GeneralMethod
 
 
+class FolderBanner(base.ViewletBase):
+    pass
+
+
 class TopViewlet(base.ViewletBase, GeneralMethod):
     pass
 
