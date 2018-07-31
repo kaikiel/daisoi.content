@@ -62,4 +62,13 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      name="img_view"
+      for="plone.app.contenttypes.interfaces.IImage"
+      template="templates/img_view.pt"
+      class=".views.ImgView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
 </configure>

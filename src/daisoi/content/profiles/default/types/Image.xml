@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<object
+    i18n:domain="plone"
+    meta_type="Dexterity FTI"
+    name="Image"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  <property name="default_view">img_view</property>
+  <property name="immediate_view">img_view</property>
+  <property name="view_methods">
+    <element value="image_view"/>
+    <element value="img_view"/>
+  </property>
+
+</object>
