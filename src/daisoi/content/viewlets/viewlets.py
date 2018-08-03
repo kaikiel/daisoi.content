@@ -53,3 +53,5 @@ class FooterViewlet(base.ViewletBase, GeneralMethod):
         portal_tabs = portal_tabs_view.topLevelTabs()
         return portal_tabs
 
+    def getIP(self):
+        return self.request.getClientAddr()
