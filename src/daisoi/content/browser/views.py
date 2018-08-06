@@ -146,3 +146,8 @@ class LoginView(BrowserView):
 
 class OneYoutubeView(BrowserView):
     pass
+
+
+class ImgView(BrowserView):
+    pass
+
