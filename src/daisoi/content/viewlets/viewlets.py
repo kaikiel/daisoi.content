@@ -40,9 +40,8 @@ class FooterViewlet(base.ViewletBase, GeneralMethod):
                 item_children = self.getImgSubject().values()
                 item['children'] = item_children
                 data.append(item)
-            elif item['id'] == 'news':
-                item_children = self.getNewsSubject().values()
-                item['children'] = item_children
+            elif item['id'] == 'daisoi-news':
+                item['children'] = {}
                 data.append(item)
             else:
                 data.append(item)
@@ -52,6 +51,3 @@ class FooterViewlet(base.ViewletBase, GeneralMethod):
         portal_tabs_view = getMultiAdapter((self.context, self.request), name='portal_tabs_view')
         portal_tabs = portal_tabs_view.topLevelTabs()
         return portal_tabs
-
-    def getIP(self):
-        return self.request.getClientAddr()
