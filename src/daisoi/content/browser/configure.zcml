@@ -62,11 +62,38 @@
       permission="zope2.View"
       />
 
-  <browser:page
+    <browser:page
+      name="question_listing"
+      for="*"
+      template="templates/question_listing.pt"
+      class=".folder_views.QuestionListing"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+    <browser:page
       name="img_view"
       for="plone.app.contenttypes.interfaces.IImage"
       template="templates/img_view.pt"
       class=".views.ImgView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="login_view"
+      for="*"
+      template="templates/login_view.pt"
+      class=".views.LoginView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="one_youtube_view"
+      for="*"
+      template="templates/one_youtube_view.pt"
+      class=".views.OneYoutubeView"
       layer="zope.interface.Interface"
       permission="zope2.View"
       />

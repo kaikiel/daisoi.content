@@ -8,6 +8,10 @@ from Products.CMFPlone.utils import getSiteLogo
 from daisoi.content.browser.views import GeneralMethod
 
 
+class FolderBanner(base.ViewletBase):
+    pass
+
+
 class TopViewlet(base.ViewletBase, GeneralMethod):
     pass
 
@@ -49,3 +53,5 @@ class FooterViewlet(base.ViewletBase, GeneralMethod):
         portal_tabs = portal_tabs_view.topLevelTabs()
         return portal_tabs
 
+    def getIP(self):
+        return self.request.getClientAddr()

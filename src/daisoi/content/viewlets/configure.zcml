@@ -23,6 +23,13 @@
         permission="zope2.View"
     />
 
-
+    <browser:viewlet
+        name="folder_banner"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+        template="templates/folder_banner.pt"
+        class=".viewlets.FolderBanner"
+        layer="zope.interface.Interface"
+        permission="zope2.View"
+    />
 </configure>
 

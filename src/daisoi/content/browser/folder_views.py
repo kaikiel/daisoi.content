@@ -121,3 +121,27 @@ class FolderNewsView(FolderView):
         return results
 
 
+class QuestionListing(FolderView):
+    @property
+    def b_size(self):
+        b_size = getattr(self.request, 'b_size', None)\
+            or getattr(self.request, 'limit_display', None) or 5
+        return int(b_size)
+
+    def results(self, **kwargs):
+        # Extra filter
+        kwargs.update(self.request.get('contentFilter', {}))
+        if 'object_provides' not in kwargs:  # object_provides is more specific
+            kwargs.setdefault('portal_type', 'Document')
+        portal = api.portal.get()
+        context = self.context
+        kwargs.setdefault('path', context.absolute_url_path())
+        kwargs.setdefault('batch', True)
+
+
+        listing = aq_inner(self.context).restrictedTraverse(
+            '@@folderListing', None)
+        if listing is None:
+            return []
+        results = listing(**kwargs)
+        return results

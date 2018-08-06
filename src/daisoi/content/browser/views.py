@@ -140,5 +140,14 @@ class PloneRootView(GeneralMethod):
         return testimonials
 
 
+class LoginView(BrowserView):
+    pass
+
+
+class OneYoutubeView(BrowserView):
+    pass
+
+
 class ImgView(BrowserView):
     pass
+
