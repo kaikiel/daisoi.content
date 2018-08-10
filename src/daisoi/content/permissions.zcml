@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="daisoi.content.AddProblemTable"
+        title="daisoi.content: Add ProblemTable"
+    />
+
+        
+    <permission
         id="daisoi.content.AddVideoDescription"
         title="daisoi.content: Add VideoDescription"
     />

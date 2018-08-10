@@ -145,7 +145,7 @@ class PloneRootView(GeneralMethod):
                 context = portal['resource']['testimonials']
         testimonials = api.content.find(context=context, portal_type='Document', sort_on='getObjPositionInParent')
         return testimonials
-   """
+    """
 
 
 class LoginView(GeneralMethod):
@@ -157,14 +157,20 @@ class ImgView(BrowserView):
 
 
 class FactoryManagementView(BrowserView):
-    pass
+    def getVieoDescription(self):
+        videoDescription = api.content.find(context=self.context, portal_type="VideoDescription", sort_on='getObjPositionInParent')
+        return videoDescription
 
 
 class TwelveFunctionView(BrowserView):
-    pass
+    def get12Function(self):
+        functions = api.content.find(context=self.context, portal_type="Document", sort_on='getObjPositionInParent', b_size="12")
+        return functions
 
 
 class ServiceView(BrowserView):
-    pass
+    def getService(self):
+        functions = api.content.find(context=self.context, portal_type="Document", sort_on='getObjPositionInParent', b_size="12")
+        return functions
 
 
