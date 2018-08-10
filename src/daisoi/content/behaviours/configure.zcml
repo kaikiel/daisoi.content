@@ -1,0 +1,30 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="daisoi.content">
+
+    <include package="plone.behavior" file="meta.zcml"/>
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <plone:behavior
+        name="daisoi.content.behaviours.hover_image"
+        title="Hover Image"
+        provides=".hover_image.IHoverImg"
+        factory=".hover_image.HoverImg"
+        marker=".hover_image.IHoverImg"
+        />
+
+    <plone:behavior
+        name="daisoi.content.behaviours.top_image"
+        title="Top Image"
+        provides=".top_image.ITopImg"
+        factory=".top_image.TopImg"
+        marker=".top_image.ITopImg"
+        />
+
+
+</configure>
+

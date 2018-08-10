@@ -17,11 +17,11 @@
     <element value="plone.app.contenttypes.behaviors.tableofcontents.ITableOfContents"/>
     <element value="plone.app.lockingbehavior.behaviors.ILocking" />
     <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
+    <element value="daisoi.content.behaviours.hover_image"/>
   </property>
 
   <property name="view_methods">
     <element value="document_view"/>
-    <element value="login_view" />
-    <element value="one_youtube_view" />
   </property>
+
 </object>

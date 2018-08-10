@@ -13,18 +13,15 @@
     <element value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
     <element value="plone.app.relationfield.behavior.IRelatedItems"/>
     <element value="plone.app.dexterity.behaviors.nextprevious.INextPreviousToggle"/>
-    <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
+    <element value="daisoi.content.behaviours.top_image"/>
   </property>
   <property name="view_methods">
-    <element value="question_listing"/>
     <element value="performance_listing"/>
     <element value="news_listing"/>
-    <element value="album_view"/>
-    <element value="event_listing"/>
-    <element value="full_view"/>
-    <element value="listing_view"/>
-    <element value="summary_view"/>
-    <element value="tabular_view"/>
+    <element value="factory_management_view"/>
+    <element value="service_view"/>
+    <element value="12_function_view"/>
+    <element value="question_listing"/>
   </property>
 </object>
 

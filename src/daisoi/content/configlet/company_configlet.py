@@ -57,6 +57,12 @@ class IInfo(model.Schema):
         required=False,
     )
 
+    youtube_link = schema.TextLine(
+        title=_(u'Youtube Link'),
+        description=_(u'Displan on Top'),
+        required=False,
+    )
+
     @invariant
     def email_invariant(data):
         com_email = data.email

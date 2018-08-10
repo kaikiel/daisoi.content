@@ -19,7 +19,7 @@
       />
 
   <browser:page
-      name="contact_us"
+      name="contact_info"
       for="*"
       class=".views.ContactUsView"
       layer="zope.interface.Interface"
@@ -90,10 +90,28 @@
       />
 
   <browser:page
-      name="one_youtube_view"
-      for="*"
-      template="templates/one_youtube_view.pt"
-      class=".views.OneYoutubeView"
+      name="factory_management_view"
+      for="Products.CMFCore.interfaces.IFolderish"
+      template="templates/factory_management_view.pt"
+      class=".views.FactoryManagementView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="12_function_view"
+      for="Products.CMFCore.interfaces.IFolderish"
+      template="templates/twelve_function_view.pt"
+      class=".views.TwelveFunctionView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="service_view"
+      for="Products.CMFCore.interfaces.IFolderish"
+      template="templates/service_view.pt"
+      class=".views.ServiceView"
       layer="zope.interface.Interface"
       permission="zope2.View"
       />

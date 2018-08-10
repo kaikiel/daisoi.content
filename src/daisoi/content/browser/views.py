@@ -15,7 +15,8 @@ class GeneralMethod(BrowserView):
          'fax':api.portal.get_registry_record('daisoi.content.configlet.company_configlet.IInfo.fax', default=''),
          'phone':api.portal.get_registry_record('daisoi.content.configlet.company_configlet.IInfo.phone', default=''),
          'r_email':api.portal.get_registry_record('daisoi.content.configlet.company_configlet.IInfo.r_email', default=''),
-         'fb_link':api.portal.get_registry_record('daisoi.content.configlet.company_configlet.IInfo.fb_link', default='')}
+         'fb_link':api.portal.get_registry_record('daisoi.content.configlet.company_configlet.IInfo.fb_link', default=''),
+         'youtube_link':api.portal.get_registry_record('daisoi.content.configlet.company_configlet.IInfo.youtube_link', default='')}
         return info
 
     def getImgSubject(self):
@@ -77,6 +78,8 @@ class NewsView(GeneralMethod):
 
 
 class PloneRootView(GeneralMethod):
+    def pdb(self):
+        import pdb;pdb.set_trace()
 
     def getBanner(self):
         portal = api.portal.get()
@@ -105,14 +108,6 @@ class PloneRootView(GeneralMethod):
         indexabout = api.content.find(context=context, portal_type='Document', sort_on='getObjPositionInParent', b_size=1)
         return indexabout
 
-    def getService(self):
-        portal = api.portal.get()
-        context = self.context
-        if portal.hasObject('service'):
-            context = portal['service']
-        service = api.content.find(context=context, portal_type='Document', sort_on='getObjPositionInParent', b_size=3)
-        return service
-
     def getPerformance(self):
         portal = api.portal.get()
         context = self.context
@@ -130,6 +125,18 @@ class PloneRootView(GeneralMethod):
         serviceicon = api.content.find(context=context, portal_type='Document', sort_on='getObjPositionInParent', b_size=12)
         return serviceicon
 
+    """
+    def getService(self):
+        portal = api.portal.get()
+        context = self.context
+        if portal.hasObject('resource'):
+            if portal['resource'].hasObject('main-service'):
+                context = portal['resource']['main-service']
+        service = api.content.find(context=context, portal_type='Document', sort_on='getObjPositionInParent', b_size=3)
+        return service
+    """
+
+    """
     def getTestimonials(self):
         portal = api.portal.get()
         context = self.context
@@ -138,16 +145,26 @@ class PloneRootView(GeneralMethod):
                 context = portal['resource']['testimonials']
         testimonials = api.content.find(context=context, portal_type='Document', sort_on='getObjPositionInParent')
         return testimonials
+   """
 
 
-class LoginView(BrowserView):
-    pass
-
-
-class OneYoutubeView(BrowserView):
+class LoginView(GeneralMethod):
     pass
 
 
 class ImgView(BrowserView):
     pass
+
+
+class FactoryManagementView(BrowserView):
+    pass
+
+
+class TwelveFunctionView(BrowserView):
+    pass
+
+
+class ServiceView(BrowserView):
+    pass
+
 

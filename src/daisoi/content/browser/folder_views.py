@@ -7,9 +7,12 @@ from Products.CMFCore.utils import getToolByName
 from plone.app.contenttypes.browser.folder import FolderView
 from plone.app.contentlisting.interfaces import IContentListing
 from daisoi.content.browser.views import GeneralMethod
+from random import randint
 
 
 class FolderPerformanceView(FolderView, GeneralMethod):
+    def pdb(self):
+        import pdb;pdb.set_trace()
 
     @property
     def img_subject(self):
@@ -46,9 +49,7 @@ class FolderPerformanceView(FolderView, GeneralMethod):
         portal = api.portal.get()
         context = self.context
         kwargs.setdefault('path', context.absolute_url_path())
-        kwargs.setdefault('batch', True)
-        kwargs.setdefault('b_size', self.b_size)
-        kwargs.setdefault('b_start', self.b_start)
+        kwargs.setdefault('batch', False)
         
         if self.img_subject:
             kwargs['img_subject'] = self.img_subject
@@ -58,6 +59,31 @@ class FolderPerformanceView(FolderView, GeneralMethod):
         if listing is None:
             return []
         results = listing(**kwargs)
+        
+        if not self.img_subject:
+            temp_results = []
+            imgSubject = self.getImgSubject().keys()
+            results = list(results[:])
+            while len(results) > 0:
+                for sub in imgSubject:
+                    while True:
+                        if len(results) == 0:
+                            break
+                        index = randint(0, len(results)-1) or 0
+                        randImg = results[index]
+                        if not randImg.img_subject:
+                            temp_results.append(results.pop(index))
+                        if sub in randImg.img_subject:
+                            temp_results.append(results.pop(index))
+                            break
+                        imgSubject = set()
+                        for img in results:
+                            for subject in img.img_subject:
+                                imgSubject.add(subject)
+                        if sub not in imgSubject:
+                            break
+            results = temp_results
+                
         return results
 
 

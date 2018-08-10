@@ -13,6 +13,7 @@
   -->
   <!--<includeDependencies package="." />-->
 
+  <include package=".behaviours" />
   <include package=".browser" />
   <include package=".viewlets" />
   <include package=".index" />

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-07-26 09:40+0000\n"
+"POT-Creation-Date: 2018-08-08 03:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr "新增應用實績標籤"
 msgid "Add News_Subject Portlet"
 msgstr "新增新訊發表標籤"
 
-#: ../portlets/search_news_portlet.py:31
+#: ../portlets/search_news_portlet.py:35
 msgid "Add Search_News Portlet"
 msgstr "新增搜尋新訊發表方框"
 
@@ -34,7 +34,7 @@ msgstr "地址"
 msgid "Company Description"
 msgstr "公司簡介"
 
-#: ../configlet/company_configlet.py:77
+#: ../configlet/company_configlet.py:83
 msgid "Compony Info"
 msgstr "公司資訊"
 
@@ -74,7 +74,7 @@ msgstr "編輯應用實績標籤"
 msgid "Edit News_Subject Portlet"
 msgstr "編輯新訊發表標籤"
 
-#: ../portlets/search_news_portlet.py:39
+#: ../portlets/search_news_portlet.py:43
 msgid "Edit Search_News Portlet"
 msgstr "編輯搜尋新訊發表方框"
 
@@ -86,6 +86,14 @@ msgstr "Facebook 連結"
 msgid "Fax"
 msgstr "傳真"
 
+#: ../behaviours/configure.zcml:18
+msgid "Hover Image"
+msgstr ""
+
+#: ../behaviours/top_image.py:16
+msgid "Image2"
+msgstr "背景縮圖"
+
 #: ../portlets/img_subject_portlet.py:22
 #: ../profiles/default/portlets.xml
 msgid "Img_Subject"
@@ -95,7 +103,7 @@ msgstr "應用實績標籤"
 msgid "Img_Subject Description"
 msgstr "應用實績標籤連結"
 
-#: ../configure.zcml:33
+#: ../configure.zcml:34
 msgid "Installs the daisoi.content add-on."
 msgstr ""
 
@@ -112,7 +120,7 @@ msgstr "新增新訊發表標籤連結"
 msgid "Phone"
 msgstr "電話"
 
-#: ../configlet/company_configlet.py:69
+#: ../configlet/company_configlet.py:75
 msgid "Receive Email is not valid!"
 msgstr "E-Mail (收信用) 欄位格式不正確"
 
@@ -121,7 +129,12 @@ msgstr "E-Mail (收信用) 欄位格式不正確"
 msgid "Search_News"
 msgstr "搜尋新訊發表方框"
 
-#: ../configure.zcml:42
+#: ../behaviours/configure.zcml:26
+#: ../behaviours/hover_image.py:16
+msgid "Top Image"
+msgstr "頁面頂圖"
+
+#: ../configure.zcml:43
 msgid "Uninstalls the daisoi.content add-on."
 msgstr ""
 
@@ -129,14 +142,18 @@ msgstr ""
 msgid "Used to receive E-Mail from Contact Us Page"
 msgstr "用於收聯絡我們頁面的留言信件"
 
-#: ../configlet/company_configlet.py:67
+#: ../configlet/company_configlet.py:73
 msgid "Your Email is not valid!"
 msgstr "E-Mail 欄位格式不正確"
 
-#: ../configure.zcml:33
+#: ../configlet/company_configlet.py:61
+msgid "Youtube Link"
+msgstr ""
+
+#: ../configure.zcml:34
 msgid "daisoi.content"
 msgstr ""
 
-#: ../configure.zcml:42
+#: ../configure.zcml:43
 msgid "daisoi.content (uninstall)"
 msgstr ""

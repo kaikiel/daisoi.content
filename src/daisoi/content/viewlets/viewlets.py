@@ -32,16 +32,16 @@ class FooterViewlet(base.ViewletBase, GeneralMethod):
         return friendLink
 
     def getSiteMap(self):
-        view = getMultiAdapter((self.context, self.request), name='sitemap_builder_view')
-        siteMap = view.siteMap()['children']
+        view = getMultiAdapter((self.context, self.request), name='sitemap_builder_view').siteMap().copy()
+        siteMap = view['children'][:]
         data = []
         for item in siteMap:
             if item['id'] == 'performance':
                 item_children = self.getImgSubject().values()
                 item['children'] = item_children
                 data.append(item)
-            elif item['id'] == 'daisoi-news':
-                item['children'] = {}
+            elif item['id'] == 'news_daisoi':
+                item['children'] = []
                 data.append(item)
             else:
                 data.append(item)

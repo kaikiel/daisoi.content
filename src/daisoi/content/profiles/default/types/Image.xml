@@ -6,6 +6,20 @@
     xmlns:i18n="http://xml.zope.org/namespaces/i18n">
   <property name="default_view">img_view</property>
   <property name="immediate_view">img_view</property>
+  
+  <!-- Enabled behaviors -->
+  <property name="behaviors" purge="false">
+    <element value="plone.app.dexterity.behaviors.metadata.ICategorization"/>
+    <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
+    <element value="plone.app.dexterity.behaviors.metadata.IOwnership"/>
+    <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
+    <element value="plone.app.dexterity.behaviors.id.IShortName"/>
+    <element value="plone.app.dexterity.behaviors.filename.INameFromFileName"/>
+    <element value="plone.app.content.interfaces.INameFromTitle"/>
+    <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
+    <element value="plone.app.relationfield.behavior.IRelatedItems"/>
+  </property>
+
   <property name="view_methods">
     <element value="image_view"/>
     <element value="img_view"/>

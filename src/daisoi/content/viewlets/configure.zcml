@@ -25,6 +25,7 @@
 
     <browser:viewlet
         name="folder_banner"
+        for="plone.dexterity.interfaces.IDexterityContent"
         manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
         template="templates/folder_banner.pt"
         class=".viewlets.FolderBanner"
