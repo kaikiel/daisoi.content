@@ -12,43 +12,73 @@ from daisoi.content import _
 
 
 class IProblemTable(model.Schema):
-    """ Marker interface and Dexterity Python Schema for ProblemTable
-    """
+    fieldset(_('Basic Text'), fields=['description_header', 'description_text', 'description_img'])
+    description_header = schema.Text(
+        title=_(u'description header'),
+        required=True,
+    )
 
-    # directives.widget(level=RadioFieldWidget)
-    # level = schema.Choice(
-    #     title=_(u'Sponsoring Level'),
-    #     vocabulary=LevelVocabulary,
-    #     required=True
-    # )
+    description_text = schema.Text(
+        title=_(u'description text'),
+        required=True,
+    )
 
-    # text = RichText(
-    #     title=_(u'Text'),
-    #     required=False
-    # )
+    description_img = namedfile.NamedBlobImage(
+        title=_(u'description Image'),
+        required=True,
+    )
 
-    # url = schema.URI(
-    #     title=_(u'Link'),
-    #     required=False
-    # )
+    fieldset(_('General Problem'), fields=['problem_people', 'problem_machine', 'problem_materials', 'problem_method', 'problem_EC'])
+    problem_people = schema.Text(
+        title=_(u'problem_people'),
+        required=True,
+    )
 
-    # fieldset('Images', fields=['logo', 'advertisement'])
-    # logo = namedfile.NamedBlobImage(
-    #     title=_(u'Logo'),
-    #     required=False,
-    # )
+    problem_machine = schema.Text(
+        title=_(u'problem_machine'),
+        required=True,
+    )
 
-    # advertisement = namedfile.NamedBlobImage(
-    #     title=_(u'Advertisement (Gold-sponsors and above)'),
-    #     required=False,
-    # )
+    problem_materials = schema.Text(
+        title=_(u'problem_materials'),
+        required=True,
+    )
 
-    # directives.read_permission(notes='cmf.ManagePortal')
-    # directives.write_permission(notes='cmf.ManagePortal')
-    # notes = RichText(
-    #     title=_(u'Secret Notes (only for site-admins)'),
-    #     required=False
-    # )
+    problem_method = schema.Text(
+        title=_(u'problem_method'),
+        required=True,
+    )
+
+    problem_EC = schema.Text(
+        title=_(u'problem_EC'),
+        required=True,
+    )
+
+    fieldset(_('Smart Problem'), fields=['smart_people', 'smart_machine', 'smart_materials', 'smart_method', 'smart_EC'])
+    smart_people = schema.Text(
+        title=_(u'smart_people'),
+        required=True,
+    )
+
+    smart_machine = schema.Text(
+        title=_(u'smart_machine'),
+        required=True,
+    )
+
+    smart_materials = schema.Text(
+        title=_(u'smart_materials'),
+        required=True,
+    )
+
+    smart_method = schema.Text(
+        title=_(u'smart_method'),
+        required=True,
+    )
+
+    smart_EC = schema.Text(
+        title=_(u'smart_EC'),
+        required=True,
+    )
 
 
 @implementer(IProblemTable)

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-08 03:53+0000\n"
+"POT-Creation-Date: 2018-08-10 09:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,10 @@ msgstr "公司簡介"
 msgid "Compony Info"
 msgstr "公司資訊"
 
+#: ../content/video_description.py:27
+msgid "Description"
+msgstr "描述"
+
 #: ../configlet/company_configlet.py:56
 msgid "Displan on Top"
 msgstr "將顯示於 頁首"
@@ -66,6 +70,11 @@ msgstr ""
 msgid "E-Mail (Receive)"
 msgstr "E-Mail (收信用)"
 
+#: ../profiles/default/types/ProblemTable.xml
+#: ../profiles/default/types/VideoDescription.xml
+msgid "Edit"
+msgstr ""
+
 #: ../portlets/img_subject_portlet.py:39
 msgid "Edit Img_Subject Portlet"
 msgstr "編輯應用實績標籤"
@@ -86,11 +95,15 @@ msgstr "Facebook 連結"
 msgid "Fax"
 msgstr "傳真"
 
+#: ../content/problem_table.py:16
+msgid "General Problem"
+msgstr "一般工廠問題"
+
 #: ../behaviours/configure.zcml:18
 msgid "Hover Image"
 msgstr ""
 
-#: ../behaviours/top_image.py:16
+#: ../behaviours/hover_image.py:16
 msgid "Image2"
 msgstr "背景縮圖"
 
@@ -120,6 +133,10 @@ msgstr "新增新訊發表標籤連結"
 msgid "Phone"
 msgstr "電話"
 
+#: ../profiles/default/types/ProblemTable.xml
+msgid "ProblemTable"
+msgstr "工廠問題表格"
+
 #: ../configlet/company_configlet.py:75
 msgid "Receive Email is not valid!"
 msgstr "E-Mail (收信用) 欄位格式不正確"
@@ -129,8 +146,20 @@ msgstr "E-Mail (收信用) 欄位格式不正確"
 msgid "Search_News"
 msgstr "搜尋新訊發表方框"
 
+#: ../content/problem_table.py:42
+msgid "Smart Problem"
+msgstr "智慧工廠效益"
+
+#: ../content/video_description.py:17
+msgid "Title"
+msgstr "標題"
+
+#: ../content/video_description.py:22
+msgid "Title Icon"
+msgstr "標題圖示"
+
 #: ../behaviours/configure.zcml:26
-#: ../behaviours/hover_image.py:16
+#: ../behaviours/top_image.py:16
 msgid "Top Image"
 msgstr "頁面頂圖"
 
@@ -142,13 +171,23 @@ msgstr ""
 msgid "Used to receive E-Mail from Contact Us Page"
 msgstr "用於收聯絡我們頁面的留言信件"
 
+#: ../profiles/default/types/VideoDescription.xml
+msgid "VideoDescription"
+msgstr "影片說明方框"
+
+#: ../profiles/default/types/ProblemTable.xml
+#: ../profiles/default/types/VideoDescription.xml
+msgid "View"
+msgstr ""
+
 #: ../configlet/company_configlet.py:73
 msgid "Your Email is not valid!"
 msgstr "E-Mail 欄位格式不正確"
 
 #: ../configlet/company_configlet.py:61
+#: ../content/video_description.py:32
 msgid "Youtube Link"
-msgstr ""
+msgstr "Youtube 連結"
 
 #: ../configure.zcml:34
 msgid "daisoi.content"
@@ -157,3 +196,43 @@ msgstr ""
 #: ../configure.zcml:43
 msgid "daisoi.content (uninstall)"
 msgstr ""
+
+#: ../content/problem_table.py:38
+msgid "problem_EC"
+msgstr "一般工廠問題->環控"
+
+#: ../content/problem_table.py:23
+msgid "problem_machine"
+msgstr "一般工廠問題->機器"
+
+#: ../content/problem_table.py:28
+msgid "problem_materials"
+msgstr "一般工廠問題->物料"
+
+#: ../content/problem_table.py:33
+msgid "problem_method"
+msgstr "一般工廠問題->方法"
+
+#: ../content/problem_table.py:18
+msgid "problem_people"
+msgstr "一般工廠問題->人員"
+
+#: ../content/problem_table.py:64
+msgid "smart_EC"
+msgstr "智慧工廠效益->環控"
+
+#: ../content/problem_table.py:49
+msgid "smart_machine"
+msgstr "智慧工廠效益->機器"
+
+#: ../content/problem_table.py:54
+msgid "smart_materials"
+msgstr "智慧工廠效益->物料"
+
+#: ../content/problem_table.py:59
+msgid "smart_method"
+msgstr "智慧工廠效益->方法"
+
+#: ../content/problem_table.py:44
+msgid "smart_people"
+msgstr "智慧工廠效益->人員"

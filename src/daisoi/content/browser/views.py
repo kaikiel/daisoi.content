@@ -157,9 +157,26 @@ class ImgView(BrowserView):
 
 
 class FactoryManagementView(BrowserView):
-    def getVieoDescription(self):
+    def getVideoDescription(self):
         videoDescription = api.content.find(context=self.context, portal_type="VideoDescription", sort_on='getObjPositionInParent')
         return videoDescription
+
+    def getTopText(self):
+        topText = api.content.find(context=self.context, portal_type="ProblemTable", sort_on='getObjPositionInParent', b_size="1")
+        return topText[0]
+
+    def getProblemTable(self):
+        problemTable = api.content.find(context=self.context, portal_type="ProblemTable", sort_on='getObjPositionInParent', b_size="1")
+        p_table = []
+        if len(problemTable) > 0:
+            problemTable = problemTable[0].getObject()
+            t_row = ['problem', 'smart']
+            t_col = ['people', 'machine', 'materials', 'method', 'EC']
+            for row in t_row:
+                for col in t_col:
+                    p_table.append(getattr(problemTable, '_'.join([row,col]) ))
+            return p_table
+        return []
 
 
 class TwelveFunctionView(BrowserView):

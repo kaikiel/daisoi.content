@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-08 03:53+0000\n"
+"POT-Creation-Date: 2018-08-10 09:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,10 @@ msgstr ""
 msgid "Compony Info"
 msgstr ""
 
+#: ../content/video_description.py:27
+msgid "Description"
+msgstr ""
+
 #: ../configlet/company_configlet.py:56
 msgid "Displan on Top"
 msgstr ""
@@ -69,6 +73,11 @@ msgstr ""
 msgid "E-Mail (Receive)"
 msgstr ""
 
+#: ../profiles/default/types/ProblemTable.xml
+#: ../profiles/default/types/VideoDescription.xml
+msgid "Edit"
+msgstr ""
+
 #: ../portlets/img_subject_portlet.py:39
 msgid "Edit Img_Subject Portlet"
 msgstr ""
@@ -89,11 +98,15 @@ msgstr ""
 msgid "Fax"
 msgstr ""
 
+#: ../content/problem_table.py:16
+msgid "General Problem"
+msgstr ""
+
 #: ../behaviours/configure.zcml:18
 msgid "Hover Image"
 msgstr ""
 
-#: ../behaviours/top_image.py:16
+#: ../behaviours/hover_image.py:16
 msgid "Image2"
 msgstr ""
 
@@ -123,6 +136,10 @@ msgstr ""
 msgid "Phone"
 msgstr ""
 
+#: ../profiles/default/types/ProblemTable.xml
+msgid "ProblemTable"
+msgstr ""
+
 #: ../configlet/company_configlet.py:75
 msgid "Receive Email is not valid!"
 msgstr ""
@@ -132,8 +149,20 @@ msgstr ""
 msgid "Search_News"
 msgstr ""
 
+#: ../content/problem_table.py:42
+msgid "Smart Problem"
+msgstr ""
+
+#: ../content/video_description.py:17
+msgid "Title"
+msgstr ""
+
+#: ../content/video_description.py:22
+msgid "Title Icon"
+msgstr ""
+
 #: ../behaviours/configure.zcml:26
-#: ../behaviours/hover_image.py:16
+#: ../behaviours/top_image.py:16
 msgid "Top Image"
 msgstr ""
 
@@ -145,11 +174,21 @@ msgstr ""
 msgid "Used to receive E-Mail from Contact Us Page"
 msgstr ""
 
+#: ../profiles/default/types/VideoDescription.xml
+msgid "VideoDescription"
+msgstr ""
+
+#: ../profiles/default/types/ProblemTable.xml
+#: ../profiles/default/types/VideoDescription.xml
+msgid "View"
+msgstr ""
+
 #: ../configlet/company_configlet.py:73
 msgid "Your Email is not valid!"
 msgstr ""
 
 #: ../configlet/company_configlet.py:61
+#: ../content/video_description.py:32
 msgid "Youtube Link"
 msgstr ""
 
@@ -159,4 +198,44 @@ msgstr ""
 
 #: ../configure.zcml:43
 msgid "daisoi.content (uninstall)"
+msgstr ""
+
+#: ../content/problem_table.py:38
+msgid "problem_EC"
+msgstr ""
+
+#: ../content/problem_table.py:23
+msgid "problem_machine"
+msgstr ""
+
+#: ../content/problem_table.py:28
+msgid "problem_materials"
+msgstr ""
+
+#: ../content/problem_table.py:33
+msgid "problem_method"
+msgstr ""
+
+#: ../content/problem_table.py:18
+msgid "problem_people"
+msgstr ""
+
+#: ../content/problem_table.py:64
+msgid "smart_EC"
+msgstr ""
+
+#: ../content/problem_table.py:49
+msgid "smart_machine"
+msgstr ""
+
+#: ../content/problem_table.py:54
+msgid "smart_materials"
+msgstr ""
+
+#: ../content/problem_table.py:59
+msgid "smart_method"
+msgstr ""
+
+#: ../content/problem_table.py:44
+msgid "smart_people"
 msgstr ""

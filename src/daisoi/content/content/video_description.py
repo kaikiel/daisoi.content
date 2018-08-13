@@ -29,7 +29,7 @@ class IVideoDescription(model.Schema):
     )
 
     url = schema.URI(
-        title=_(u'Link'),
+        title=_(u'Youtube Link'),
         required=True,
     )
 

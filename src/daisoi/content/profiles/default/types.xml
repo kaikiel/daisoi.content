@@ -4,4 +4,5 @@
   <!--<object name="example_ct" meta_type="Dexterity FTI"/>-->
   <object meta_type="Dexterity FTI" name="VideoDescription"/>
   <object meta_type="Dexterity FTI" name="ProblemTable"/>
+  <object meta_type="Dexterity FTI" name="ServiceDescription"/>
 </object>

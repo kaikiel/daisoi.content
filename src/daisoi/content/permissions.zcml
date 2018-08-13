@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="daisoi.content.AddServiceDescription"
+        title="daisoi.content: Add ServiceDescription"
+    />
+
+        
+    <permission
         id="daisoi.content.AddProblemTable"
         title="daisoi.content: Add ProblemTable"
     />
