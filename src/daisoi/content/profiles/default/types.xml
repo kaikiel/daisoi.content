@@ -5,4 +5,5 @@
   <object meta_type="Dexterity FTI" name="VideoDescription"/>
   <object meta_type="Dexterity FTI" name="ProblemTable"/>
   <object meta_type="Dexterity FTI" name="ServiceDescription"/>
+  <object meta_type="Dexterity FTI" name="Philosophy"/>
 </object>

@@ -12,43 +12,30 @@ from daisoi.content import _
 
 
 class IServiceDescription(model.Schema):
-    """ Marker interface and Dexterity Python Schema for ServiceDescription
-    """
+    service_description = schema.Text(
+        title=_(u'Service description'),
+        required=True,
+    )
 
-    # directives.widget(level=RadioFieldWidget)
-    # level = schema.Choice(
-    #     title=_(u'Sponsoring Level'),
-    #     vocabulary=LevelVocabulary,
-    #     required=True
-    # )
+    description_img = namedfile.NamedBlobImage(
+        title=_(u'description Image'),
+        required=True,
+    )
 
-    # text = RichText(
-    #     title=_(u'Text'),
-    #     required=False
-    # )
+    img_top_text = schema.TextLine(
+        title=_(u'Imgae description top text'),
+        required=True,
+    )
 
-    # url = schema.URI(
-    #     title=_(u'Link'),
-    #     required=False
-    # )
+    service_img = namedfile.NamedBlobImage(
+        title=_(u'Service Image'),
+        required=True,
+    )
 
-    # fieldset('Images', fields=['logo', 'advertisement'])
-    # logo = namedfile.NamedBlobImage(
-    #     title=_(u'Logo'),
-    #     required=False,
-    # )
-
-    # advertisement = namedfile.NamedBlobImage(
-    #     title=_(u'Advertisement (Gold-sponsors and above)'),
-    #     required=False,
-    # )
-
-    # directives.read_permission(notes='cmf.ManagePortal')
-    # directives.write_permission(notes='cmf.ManagePortal')
-    # notes = RichText(
-    #     title=_(u'Secret Notes (only for site-admins)'),
-    #     required=False
-    # )
+    img_bottom_text = schema.TextLine(
+        title=_(u'Image description bottom text'),
+        required=True,
+    )
 
 
 @implementer(IServiceDescription)

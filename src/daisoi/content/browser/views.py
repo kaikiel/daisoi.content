@@ -186,8 +186,12 @@ class TwelveFunctionView(BrowserView):
 
 
 class ServiceView(BrowserView):
-    def getService(self):
-        functions = api.content.find(context=self.context, portal_type="Document", sort_on='getObjPositionInParent', b_size="12")
-        return functions
+    def getVideoDescription(self):
+        videoDescription = api.content.find(context=self.context, portal_type="VideoDescription", sort_on='getObjPositionInParent', b_size="1")
+        return videoDescription[0]
+
+    def getServiceDescription(self):
+        description = api.content.find(context=self.context, portal_type="ServiceDescription", sort_on='getObjPositionInParent', b_size="1")
+        return description[0]
 
 
