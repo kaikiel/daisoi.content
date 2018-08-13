@@ -195,3 +195,6 @@ class ServiceView(BrowserView):
         return description[0]
 
 
+class PhilosophyView(BrowserView):
+    pass
+

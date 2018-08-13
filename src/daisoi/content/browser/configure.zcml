@@ -116,4 +116,13 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      name="philosophy_view"
+      for="daisoi.content.content.philosophy.IPhilosophy"
+      template="templates/philosophy_view.pt"
+      class=".views.PhilosophyView"
+      layer="zope.interface.Interface"
+      permission="zope2.View"
+      />
+
 </configure>

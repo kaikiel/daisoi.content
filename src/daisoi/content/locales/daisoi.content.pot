@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-10 09:07+0000\n"
+"POT-Creation-Date: 2018-08-13 06:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,10 @@ msgstr ""
 
 #: ../configlet/company_configlet.py:25
 msgid "Address"
+msgstr ""
+
+#: ../content/problem_table.py:15
+msgid "Basic Text"
 msgstr ""
 
 #: ../configlet/company_configlet.py:19
@@ -73,8 +77,9 @@ msgstr ""
 msgid "E-Mail (Receive)"
 msgstr ""
 
+#: ../profiles/default/types/Philosophy.xml
 #: ../profiles/default/types/ProblemTable.xml
-#: ../profiles/default/types/VideoDescription.xml
+#: ../profiles/default/types/ServiceDescription.xml
 msgid "Edit"
 msgstr ""
 
@@ -98,12 +103,16 @@ msgstr ""
 msgid "Fax"
 msgstr ""
 
-#: ../content/problem_table.py:16
+#: ../content/problem_table.py:31
 msgid "General Problem"
 msgstr ""
 
 #: ../behaviours/configure.zcml:18
 msgid "Hover Image"
+msgstr ""
+
+#: ../content/service_description.py:36
+msgid "Image description bottom text"
 msgstr ""
 
 #: ../behaviours/hover_image.py:16
@@ -119,6 +128,10 @@ msgstr ""
 msgid "Img_Subject Description"
 msgstr ""
 
+#: ../content/service_description.py:26
+msgid "Imgae description top text"
+msgstr ""
+
 #: ../configure.zcml:34
 msgid "Installs the daisoi.content add-on."
 msgstr ""
@@ -130,6 +143,10 @@ msgstr ""
 
 #: ../profiles/default/portlets.xml
 msgid "News_Subject Description"
+msgstr ""
+
+#: ../profiles/default/types/Philosophy.xml
+msgid "Philosophy"
 msgstr ""
 
 #: ../configlet/company_configlet.py:37
@@ -149,7 +166,19 @@ msgstr ""
 msgid "Search_News"
 msgstr ""
 
-#: ../content/problem_table.py:42
+#: ../content/service_description.py:31
+msgid "Service Image"
+msgstr ""
+
+#: ../content/service_description.py:16
+msgid "Service description"
+msgstr ""
+
+#: ../profiles/default/types/ServiceDescription.xml
+msgid "ServiceDescription"
+msgstr ""
+
+#: ../content/problem_table.py:57
 msgid "Smart Problem"
 msgstr ""
 
@@ -178,8 +207,9 @@ msgstr ""
 msgid "VideoDescription"
 msgstr ""
 
+#: ../profiles/default/types/Philosophy.xml
 #: ../profiles/default/types/ProblemTable.xml
-#: ../profiles/default/types/VideoDescription.xml
+#: ../profiles/default/types/ServiceDescription.xml
 msgid "View"
 msgstr ""
 
@@ -200,42 +230,79 @@ msgstr ""
 msgid "daisoi.content (uninstall)"
 msgstr ""
 
-#: ../content/problem_table.py:38
+#: ../content/problem_table.py:27
+#: ../content/service_description.py:21
+msgid "description Image"
+msgstr ""
+
+#: ../content/problem_table.py:17
+msgid "description header"
+msgstr ""
+
+#: ../content/problem_table.py:22
+msgid "description text"
+msgstr ""
+
+#: ../content/philosophy.py:21
+msgid "philosophy Image"
+msgstr ""
+
+#: ../content/philosophy.py:36
+msgid "philosophy Text Image"
+msgstr ""
+
+#: ../content/philosophy.py:41
+msgid "philosophy body"
+msgstr ""
+
+#: ../content/philosophy.py:16
+msgid "philosophy description"
+msgstr ""
+
+#: ../content/philosophy.py:31
+msgid "philosophy text"
+msgstr ""
+
+#: ../content/problem_table.py:53
 msgid "problem_EC"
 msgstr ""
 
-#: ../content/problem_table.py:23
+#: ../content/problem_table.py:38
 msgid "problem_machine"
 msgstr ""
 
-#: ../content/problem_table.py:28
+#: ../content/problem_table.py:43
 msgid "problem_materials"
 msgstr ""
 
-#: ../content/problem_table.py:33
+#: ../content/problem_table.py:48
 msgid "problem_method"
 msgstr ""
 
-#: ../content/problem_table.py:18
+#: ../content/problem_table.py:33
 msgid "problem_people"
 msgstr ""
 
-#: ../content/problem_table.py:64
+#: ../content/problem_table.py:79
 msgid "smart_EC"
 msgstr ""
 
-#: ../content/problem_table.py:49
+#: ../content/problem_table.py:64
 msgid "smart_machine"
 msgstr ""
 
-#: ../content/problem_table.py:54
+#: ../content/problem_table.py:69
 msgid "smart_materials"
 msgstr ""
 
-#: ../content/problem_table.py:59
+#: ../content/problem_table.py:74
 msgid "smart_method"
 msgstr ""
 
-#: ../content/problem_table.py:44
+#: ../content/problem_table.py:59
 msgid "smart_people"
+msgstr ""
+
+#: ../content/philosophy.py:26
+msgid "text title Image"
 msgstr ""

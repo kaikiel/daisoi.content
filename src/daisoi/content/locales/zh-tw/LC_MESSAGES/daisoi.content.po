@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-10 09:07+0000\n"
+"POT-Creation-Date: 2018-08-13 06:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,10 @@ msgstr "新增搜尋新訊發表方框"
 #: ../configlet/company_configlet.py:25
 msgid "Address"
 msgstr "地址"
+
+#: ../content/problem_table.py:15
+msgid "Basic Text"
+msgstr "頁面描述"
 
 #: ../configlet/company_configlet.py:19
 msgid "Company Description"
@@ -70,8 +74,9 @@ msgstr ""
 msgid "E-Mail (Receive)"
 msgstr "E-Mail (收信用)"
 
+#: ../profiles/default/types/Philosophy.xml
 #: ../profiles/default/types/ProblemTable.xml
-#: ../profiles/default/types/VideoDescription.xml
+#: ../profiles/default/types/ServiceDescription.xml
 msgid "Edit"
 msgstr ""
 
@@ -95,13 +100,17 @@ msgstr "Facebook 連結"
 msgid "Fax"
 msgstr "傳真"
 
-#: ../content/problem_table.py:16
+#: ../content/problem_table.py:31
 msgid "General Problem"
 msgstr "一般工廠問題"
 
 #: ../behaviours/configure.zcml:18
 msgid "Hover Image"
 msgstr ""
+
+#: ../content/service_description.py:36
+msgid "Image description bottom text"
+msgstr "圖片下方說明文字"
 
 #: ../behaviours/hover_image.py:16
 msgid "Image2"
@@ -116,6 +125,10 @@ msgstr "應用實績標籤"
 msgid "Img_Subject Description"
 msgstr "應用實績標籤連結"
 
+#: ../content/service_description.py:26
+msgid "Imgae description top text"
+msgstr "圖片上方說平文字"
+
 #: ../configure.zcml:34
 msgid "Installs the daisoi.content add-on."
 msgstr ""
@@ -128,6 +141,10 @@ msgstr "新訊發表標籤"
 #: ../profiles/default/portlets.xml
 msgid "News_Subject Description"
 msgstr "新增新訊發表標籤連結"
+
+#: ../profiles/default/types/Philosophy.xml
+msgid "Philosophy"
+msgstr "公司理念"
 
 #: ../configlet/company_configlet.py:37
 msgid "Phone"
@@ -146,7 +163,19 @@ msgstr "E-Mail (收信用) 欄位格式不正確"
 msgid "Search_News"
 msgstr "搜尋新訊發表方框"
 
-#: ../content/problem_table.py:42
+#: ../content/service_description.py:31
+msgid "Service Image"
+msgstr "服務圖片"
+
+#: ../content/service_description.py:16
+msgid "Service description"
+msgstr "服務說明"
+
+#: ../profiles/default/types/ServiceDescription.xml
+msgid "ServiceDescription"
+msgstr "服務"
+
+#: ../content/problem_table.py:57
 msgid "Smart Problem"
 msgstr "智慧工廠效益"
 
@@ -175,8 +204,9 @@ msgstr "用於收聯絡我們頁面的留言信件"
 msgid "VideoDescription"
 msgstr "影片說明方框"
 
+#: ../profiles/default/types/Philosophy.xml
 #: ../profiles/default/types/ProblemTable.xml
-#: ../profiles/default/types/VideoDescription.xml
+#: ../profiles/default/types/ServiceDescription.xml
 msgid "View"
 msgstr ""
 
@@ -197,42 +227,79 @@ msgstr ""
 msgid "daisoi.content (uninstall)"
 msgstr ""
 
-#: ../content/problem_table.py:38
+#: ../content/problem_table.py:27
+#: ../content/service_description.py:21
+msgid "description Image"
+msgstr "描述圖片"
+
+#: ../content/problem_table.py:17
+msgid "description header"
+msgstr "描述(粗體字)"
+
+#: ../content/problem_table.py:22
+msgid "description text"
+msgstr "描述"
+
+#: ../content/philosophy.py:21
+msgid "philosophy Image"
+msgstr "公司理念圖片"
+
+#: ../content/philosophy.py:36
+msgid "philosophy Text Image"
+msgstr "公司理念內文圖片"
+
+#: ../content/philosophy.py:41
+msgid "philosophy body"
+msgstr "公司理念詳細內文"
+
+#: ../content/philosophy.py:16
+msgid "philosophy description"
+msgstr "公司理念描述"
+
+#: ../content/philosophy.py:31
+msgid "philosophy text"
+msgstr "公司理念項目"
+
+#: ../content/problem_table.py:53
 msgid "problem_EC"
 msgstr "一般工廠問題->環控"
 
-#: ../content/problem_table.py:23
+#: ../content/problem_table.py:38
 msgid "problem_machine"
 msgstr "一般工廠問題->機器"
 
-#: ../content/problem_table.py:28
+#: ../content/problem_table.py:43
 msgid "problem_materials"
 msgstr "一般工廠問題->物料"
 
-#: ../content/problem_table.py:33
+#: ../content/problem_table.py:48
 msgid "problem_method"
 msgstr "一般工廠問題->方法"
 
-#: ../content/problem_table.py:18
+#: ../content/problem_table.py:33
 msgid "problem_people"
 msgstr "一般工廠問題->人員"
 
-#: ../content/problem_table.py:64
+#: ../content/problem_table.py:79
 msgid "smart_EC"
 msgstr "智慧工廠效益->環控"
 
-#: ../content/problem_table.py:49
+#: ../content/problem_table.py:64
 msgid "smart_machine"
 msgstr "智慧工廠效益->機器"
 
-#: ../content/problem_table.py:54
+#: ../content/problem_table.py:69
 msgid "smart_materials"
 msgstr "智慧工廠效益->物料"
 
-#: ../content/problem_table.py:59
+#: ../content/problem_table.py:74
 msgid "smart_method"
 msgstr "智慧工廠效益->方法"
 
-#: ../content/problem_table.py:44
+#: ../content/problem_table.py:59
 msgid "smart_people"
 msgstr "智慧工廠效益->人員"
+
+#: ../content/philosophy.py:26
+msgid "text title Image"
+msgstr "內文標題圖片"

@@ -12,43 +12,40 @@ from daisoi.content import _
 
 
 class IPhilosophy(model.Schema):
-    """ Marker interface and Dexterity Python Schema for Philosophy
-    """
+    title = schema.TextLine(
+        title=_(u'title'),
+        required=True,
+    )
 
-    # directives.widget(level=RadioFieldWidget)
-    # level = schema.Choice(
-    #     title=_(u'Sponsoring Level'),
-    #     vocabulary=LevelVocabulary,
-    #     required=True
-    # )
+    philosophy_description = RichText(
+        title=_(u'philosophy description'),
+        required=True,
+    )
 
-    # text = RichText(
-    #     title=_(u'Text'),
-    #     required=False
-    # )
+    philosophy_img = namedfile.NamedBlobImage(
+        title=_(u'philosophy Image'),
+        required=True,
+    )
 
-    # url = schema.URI(
-    #     title=_(u'Link'),
-    #     required=False
-    # )
+    text_title_img = namedfile.NamedBlobImage(
+        title=_(u'text title Image'),
+        required=True,
+    )
 
-    # fieldset('Images', fields=['logo', 'advertisement'])
-    # logo = namedfile.NamedBlobImage(
-    #     title=_(u'Logo'),
-    #     required=False,
-    # )
+    philosophy_text = schema.Text(
+        title=_(u'philosophy text'),
+        required=True,
+    )
 
-    # advertisement = namedfile.NamedBlobImage(
-    #     title=_(u'Advertisement (Gold-sponsors and above)'),
-    #     required=False,
-    # )
+    text_img = namedfile.NamedBlobImage(
+        title=_(u'philosophy Text Image'),
+        required=True,
+    )
 
-    # directives.read_permission(notes='cmf.ManagePortal')
-    # directives.write_permission(notes='cmf.ManagePortal')
-    # notes = RichText(
-    #     title=_(u'Secret Notes (only for site-admins)'),
-    #     required=False
-    # )
+    philosophy_body = RichText(
+        title=_(u'philosophy body'),
+        required=True,
+    )
 
 
 @implementer(IPhilosophy)
