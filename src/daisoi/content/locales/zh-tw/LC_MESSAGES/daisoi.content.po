@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-13 06:44+0000\n"
+"POT-Creation-Date: 2018-08-16 03:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 #: ../portlets/img_subject_portlet.py:31
 msgid "Add Img_Subject Portlet"
 msgstr "新增應用實績標籤"
+
+#: ../portlets/precent_news.py:145
+msgid "Add News Portlet"
+msgstr "新增大碩新訊方框"
 
 #: ../portlets/news_subject_portlet.py:31
 msgid "Add News_Subject Portlet"
@@ -84,6 +88,10 @@ msgstr ""
 msgid "Edit Img_Subject Portlet"
 msgstr "編輯應用實績標籤"
 
+#: ../portlets/precent_news.py:157
+msgid "Edit News Portlet"
+msgstr "編輯大碩新訊方框"
+
 #: ../portlets/news_subject_portlet.py:39
 msgid "Edit News_Subject Portlet"
 msgstr "編輯新訊發表標籤"
@@ -91,6 +99,10 @@ msgstr "編輯新訊發表標籤"
 #: ../portlets/search_news_portlet.py:43
 msgid "Edit Search_News Portlet"
 msgstr "編輯搜尋新訊發表方框"
+
+#: ../portlets/precent_news.py:44
+msgid "Enter a valid scale name (see 'Image Handling' control panel) to override (e.g. icon, tile, thumb, mini, preview, ... ). Leave empty to use default (see 'Site' control panel)."
+msgstr ""
 
 #: ../configlet/company_configlet.py:55
 msgid "Facebook Link"
@@ -106,6 +118,14 @@ msgstr "一般工廠問題"
 
 #: ../behaviours/configure.zcml:18
 msgid "Hover Image"
+msgstr ""
+
+#: ../portlets/precent_news.py:27
+msgid "How many items to list."
+msgstr "多少列出的項目數量。"
+
+#: ../portlets/precent_news.py:55
+msgid "If enabled, the portlet will not show thumbs"
 msgstr ""
 
 #: ../content/service_description.py:36
@@ -133,6 +153,10 @@ msgstr "圖片上方說平文字"
 msgid "Installs the daisoi.content add-on."
 msgstr ""
 
+#: ../portlets/precent_news.py:35
+msgid "Items in which workflow state to show."
+msgstr "項目的工作流程狀態顯示。"
+
 #: ../portlets/news_subject_portlet.py:22
 #: ../profiles/default/portlets.xml
 msgid "News_Subject"
@@ -142,6 +166,14 @@ msgstr "新訊發表標籤"
 msgid "News_Subject Description"
 msgstr "新增新訊發表標籤連結"
 
+#: ../portlets/precent_news.py:26
+msgid "Number of items to display"
+msgstr "顯示項目的數量"
+
+#: ../portlets/precent_news.py:43
+msgid "Override thumb scale"
+msgstr ""
+
 #: ../profiles/default/types/Philosophy.xml
 msgid "Philosophy"
 msgstr "公司理念"
@@ -149,6 +181,14 @@ msgstr "公司理念"
 #: ../configlet/company_configlet.py:37
 msgid "Phone"
 msgstr "電話"
+
+#: ../portlets/precent_news.py:76
+msgid "Precent Daisoi News"
+msgstr "近期大碩新訊"
+
+#: ../profiles/default/portlets.xml
+msgid "Precent_News"
+msgstr "近期大碩新訊"
 
 #: ../profiles/default/types/ProblemTable.xml
 msgid "ProblemTable"
@@ -178,6 +218,14 @@ msgstr "服務"
 #: ../content/problem_table.py:57
 msgid "Smart Problem"
 msgstr "智慧工廠效益"
+
+#: ../portlets/precent_news.py:54
+msgid "Suppress thumbs"
+msgstr ""
+
+#: ../portlets/precent_news.py:146
+msgid "This portlet displays recent News Items."
+msgstr "這個資訊方框用來顯示最近的大碩新訊項目。"
 
 #: ../content/video_description.py:17
 msgid "Title"
@@ -210,6 +258,10 @@ msgstr "影片說明方框"
 msgid "View"
 msgstr ""
 
+#: ../portlets/precent_news.py:34
+msgid "Workflow state"
+msgstr "工作流程狀態"
+
 #: ../configlet/company_configlet.py:73
 msgid "Your Email is not valid!"
 msgstr "E-Mail 欄位格式不正確"
@@ -240,23 +292,23 @@ msgstr "描述(粗體字)"
 msgid "description text"
 msgstr "描述"
 
-#: ../content/philosophy.py:21
+#: ../content/philosophy.py:26
 msgid "philosophy Image"
 msgstr "公司理念圖片"
 
-#: ../content/philosophy.py:36
+#: ../content/philosophy.py:41
 msgid "philosophy Text Image"
 msgstr "公司理念內文圖片"
 
-#: ../content/philosophy.py:41
+#: ../content/philosophy.py:46
 msgid "philosophy body"
 msgstr "公司理念詳細內文"
 
-#: ../content/philosophy.py:16
+#: ../content/philosophy.py:21
 msgid "philosophy description"
 msgstr "公司理念描述"
 
-#: ../content/philosophy.py:31
+#: ../content/philosophy.py:36
 msgid "philosophy text"
 msgstr "公司理念項目"
 
@@ -300,6 +352,10 @@ msgstr "智慧工廠效益->方法"
 msgid "smart_people"
 msgstr "智慧工廠效益->人員"
 
-#: ../content/philosophy.py:26
+#: ../content/philosophy.py:31
 msgid "text title Image"
 msgstr "內文標題圖片"
+
+#: ../content/philosophy.py:16
+msgid "title"
+msgstr "標題"

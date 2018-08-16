@@ -37,5 +37,14 @@
          editview=".search_news_portlet.EditForm"
          />
 
+     <plone:portlet
+        name="daisoi.content.Precent_News"
+        interface=".precent_news.INewsPortlet"
+        assignment=".precent_news.Assignment"
+        renderer=".precent_news.Renderer"
+        addview=".precent_news.AddForm"
+        editview=".precent_news.EditForm"
+        />
+
 </configure>
 

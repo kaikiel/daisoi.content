@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-13 06:44+0000\n"
+"POT-Creation-Date: 2018-08-16 03:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 
 #: ../portlets/img_subject_portlet.py:31
 msgid "Add Img_Subject Portlet"
+msgstr ""
+
+#: ../portlets/precent_news.py:145
+msgid "Add News Portlet"
 msgstr ""
 
 #: ../portlets/news_subject_portlet.py:31
@@ -84,12 +88,20 @@ msgstr ""
 msgid "Edit Img_Subject Portlet"
 msgstr ""
 
+#: ../portlets/precent_news.py:157
+msgid "Edit News Portlet"
+msgstr ""
+
 #: ../portlets/news_subject_portlet.py:39
 msgid "Edit News_Subject Portlet"
 msgstr ""
 
 #: ../portlets/search_news_portlet.py:43
 msgid "Edit Search_News Portlet"
+msgstr ""
+
+#: ../portlets/precent_news.py:44
+msgid "Enter a valid scale name (see 'Image Handling' control panel) to override (e.g. icon, tile, thumb, mini, preview, ... ). Leave empty to use default (see 'Site' control panel)."
 msgstr ""
 
 #: ../configlet/company_configlet.py:55
@@ -106,6 +118,14 @@ msgstr ""
 
 #: ../behaviours/configure.zcml:18
 msgid "Hover Image"
+msgstr ""
+
+#: ../portlets/precent_news.py:27
+msgid "How many items to list."
+msgstr ""
+
+#: ../portlets/precent_news.py:55
+msgid "If enabled, the portlet will not show thumbs"
 msgstr ""
 
 #: ../content/service_description.py:36
@@ -133,6 +153,10 @@ msgstr ""
 msgid "Installs the daisoi.content add-on."
 msgstr ""
 
+#: ../portlets/precent_news.py:35
+msgid "Items in which workflow state to show."
+msgstr ""
+
 #: ../portlets/news_subject_portlet.py:22
 #: ../profiles/default/portlets.xml
 msgid "News_Subject"
@@ -142,12 +166,28 @@ msgstr ""
 msgid "News_Subject Description"
 msgstr ""
 
+#: ../portlets/precent_news.py:26
+msgid "Number of items to display"
+msgstr ""
+
+#: ../portlets/precent_news.py:43
+msgid "Override thumb scale"
+msgstr ""
+
 #: ../profiles/default/types/Philosophy.xml
 msgid "Philosophy"
 msgstr ""
 
 #: ../configlet/company_configlet.py:37
 msgid "Phone"
+msgstr ""
+
+#: ../portlets/precent_news.py:76
+msgid "Precent Daisoi News"
+msgstr ""
+
+#: ../profiles/default/portlets.xml
+msgid "Precent_News"
 msgstr ""
 
 #: ../profiles/default/types/ProblemTable.xml
@@ -177,6 +217,14 @@ msgstr ""
 
 #: ../content/problem_table.py:57
 msgid "Smart Problem"
+msgstr ""
+
+#: ../portlets/precent_news.py:54
+msgid "Suppress thumbs"
+msgstr ""
+
+#: ../portlets/precent_news.py:146
+msgid "This portlet displays recent News Items."
 msgstr ""
 
 #: ../content/video_description.py:17
@@ -210,6 +258,10 @@ msgstr ""
 msgid "View"
 msgstr ""
 
+#: ../portlets/precent_news.py:34
+msgid "Workflow state"
+msgstr ""
+
 #: ../configlet/company_configlet.py:73
 msgid "Your Email is not valid!"
 msgstr ""
@@ -240,23 +292,23 @@ msgstr ""
 msgid "description text"
 msgstr ""
 
-#: ../content/philosophy.py:21
+#: ../content/philosophy.py:26
 msgid "philosophy Image"
 msgstr ""
 
-#: ../content/philosophy.py:36
+#: ../content/philosophy.py:41
 msgid "philosophy Text Image"
 msgstr ""
 
-#: ../content/philosophy.py:41
+#: ../content/philosophy.py:46
 msgid "philosophy body"
 msgstr ""
 
-#: ../content/philosophy.py:16
+#: ../content/philosophy.py:21
 msgid "philosophy description"
 msgstr ""
 
-#: ../content/philosophy.py:31
+#: ../content/philosophy.py:36
 msgid "philosophy text"
 msgstr ""
 
@@ -300,6 +352,10 @@ msgstr ""
 msgid "smart_people"
 msgstr ""
 
-#: ../content/philosophy.py:26
+#: ../content/philosophy.py:31
 msgid "text title Image"
+msgstr ""
+
+#: ../content/philosophy.py:16
+msgid "title"
 msgstr ""

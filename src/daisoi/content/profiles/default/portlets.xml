@@ -3,4 +3,5 @@
   <portlet addview="daisoi.content.Img_Subject"  title="Img_Subject" description="Img_Subject Description"  i18n:attributes="title;description" />
   <portlet addview="daisoi.content.News_Subject" title="News_Subject" description="News_Subject Description" i18n:attributes="title;description"/>
   <portlet addview="daisoi.content.Search_News" title="Search_News" i18n:attributes="title"/>
+  <portlet addview="daisoi.content.Precent_News" title="Precent_News" i18n:attributes="title"/>
 </portlets>
