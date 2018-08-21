@@ -38,8 +38,8 @@ class GeneralMethod(BrowserView):
         newsSubjectList = {}
         for key in index.uniqueValues():
             subDict = {key:{'Title':key,
-                            'getURL':'{}/news?news_subject={}'.format(self.context.portal_url(), key),
-                            'absolute_url':'{}/news?news_subject={}'.format(self.context.portal_url(), key),
+                            'getURL':'{}/news_daisoi?news_subject={}'.format(self.context.portal_url(), key),
+                            'absolute_url':'{}/news_daisoi?news_subject={}'.format(self.context.portal_url(), key),
                             'children':[]}
                       }
             newsSubjectList.update(subDict)
@@ -57,12 +57,12 @@ class ContactUsView(GeneralMethod):
             try:
                 phone = request.get('phone')
                 subject = getattr(self.request, 'subject', "Contact Daisoi From:"+name)
-                body_str = """Name:{}<br/>Email:{}<br/>Phone:{}<br/>Message:{}""".format(name, email, phone, message)
+                body_str = "Name:{}<br/>Email:{}<br/>Phone:{}<br/>Message:<br/>{}".format(name, email, phone, message)
                 mime_text = MIMEText(body_str, 'html', 'utf-8')
                 api.portal.send_email(
-                    recipient=self.getCompanyInfo['r_email'],
+                    recipient=self.getCompanyInfo()['r_email'].encode('utf8'),
                     sender=email,
-                    subject="Contact Us",
+                    subject="Contact Daisoi: {}".format(subject),
                     body=mime_text.as_string(),
                 )
                 api.portal.show_message(message='發送成功!'.decode('utf-8'), request=request)

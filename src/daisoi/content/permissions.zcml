@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="daisoi.content.AddBanner"
+        title="daisoi.content: Add Banner"
+    />
+
+        
+    <permission
         id="daisoi.content.AddPhilosophy"
         title="daisoi.content: Add Philosophy"
     />

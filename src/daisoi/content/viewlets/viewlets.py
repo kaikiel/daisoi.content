@@ -9,7 +9,17 @@ from daisoi.content.browser.views import GeneralMethod
 
 
 class FolderBanner(base.ViewletBase):
-    pass
+    def getTopImage(self):
+        context = self.context
+        while True: 
+            topImg = getattr(context, 'topImg', None)
+            if topImg:
+                return context.absolute_url() + '/@@images/topImg'
+            context = getattr(context, 'getParentNode', None)
+            if not context:
+                return self.context.portal_url() + '/resource/website_image/default_folder_banner'
+            else:
+                context = context()
 
 
 class TopViewlet(base.ViewletBase, GeneralMethod):

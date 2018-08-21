@@ -6,4 +6,5 @@
   <object meta_type="Dexterity FTI" name="ProblemTable"/>
   <object meta_type="Dexterity FTI" name="ServiceDescription"/>
   <object meta_type="Dexterity FTI" name="Philosophy"/>
+  <object meta_type="Dexterity FTI" name="Banner"/>
 </object>

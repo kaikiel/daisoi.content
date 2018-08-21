@@ -4,6 +4,7 @@
 from plone.indexer.decorator import indexer
 from plone.app.contenttypes.interfaces import INewsItem
 from plone.app.contenttypes.interfaces import IImage
+from plone.app.contenttypes.interfaces import IDocument
 
 
 @indexer(IImage)
