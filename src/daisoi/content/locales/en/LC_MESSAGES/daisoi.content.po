@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-16 03:18+0000\n"
+"POT-Creation-Date: 2018-08-21 02:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,10 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
+#: ../profiles/default/types/Banner.xml
+msgid "Banner"
+msgstr ""
+
 #: ../content/problem_table.py:15
 msgid "Basic Text"
 msgstr ""
@@ -46,6 +50,7 @@ msgstr ""
 msgid "Compony Info"
 msgstr ""
 
+#: ../content/banner.py:21
 #: ../content/video_description.py:27
 msgid "Description"
 msgstr ""
@@ -78,9 +83,9 @@ msgstr ""
 msgid "E-Mail (Receive)"
 msgstr ""
 
+#: ../profiles/default/types/Banner.xml
 #: ../profiles/default/types/Philosophy.xml
 #: ../profiles/default/types/ProblemTable.xml
-#: ../profiles/default/types/ServiceDescription.xml
 msgid "Edit"
 msgstr ""
 
@@ -126,6 +131,10 @@ msgstr ""
 
 #: ../portlets/precent_news.py:55
 msgid "If enabled, the portlet will not show thumbs"
+msgstr ""
+
+#: ../content/banner.py:26
+msgid "Image"
 msgstr ""
 
 #: ../content/service_description.py:36
@@ -252,9 +261,9 @@ msgstr ""
 msgid "VideoDescription"
 msgstr ""
 
+#: ../profiles/default/types/Banner.xml
 #: ../profiles/default/types/Philosophy.xml
 #: ../profiles/default/types/ProblemTable.xml
-#: ../profiles/default/types/ServiceDescription.xml
 msgid "View"
 msgstr ""
 
@@ -332,6 +341,10 @@ msgstr ""
 msgid "problem_people"
 msgstr ""
 
+#: ../content/banner.py:16
+msgid "small text"
+msgstr ""
+
 #: ../content/problem_table.py:79
 msgid "smart_EC"
 msgstr ""
@@ -358,4 +371,8 @@ msgstr ""
 
 #: ../content/philosophy.py:16
 msgid "title"
+msgstr ""
+
+#: ../profiles/default/types/Banner.xml
+msgid "used on index"
 msgstr ""

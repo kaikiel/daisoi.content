@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-16 03:18+0000\n"
+"POT-Creation-Date: 2018-08-21 02:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,10 @@ msgstr "新增搜尋新訊發表方框"
 msgid "Address"
 msgstr "地址"
 
+#: ../profiles/default/types/Banner.xml
+msgid "Banner"
+msgstr "首頁輪播"
+
 #: ../content/problem_table.py:15
 msgid "Basic Text"
 msgstr "頁面描述"
@@ -46,6 +50,7 @@ msgstr "公司簡介"
 msgid "Compony Info"
 msgstr "公司資訊"
 
+#: ../content/banner.py:21
 #: ../content/video_description.py:27
 msgid "Description"
 msgstr "描述"
@@ -60,15 +65,15 @@ msgstr "將顯示於 頁尾"
 
 #: ../configlet/company_configlet.py:32
 msgid "Display on Footer and Contact Us Page"
-msgstr "將顯示於 頁尾 及 聯絡我們 頁面"
+msgstr "將顯示於 頁尾 及 聯繫大碩 頁面"
 
 #: ../configlet/company_configlet.py:38
 msgid "Display on Index and Top and Footer and Contact Us Page"
-msgstr "將顯示於 首頁 及 頁首 及 頁尾 及 聯絡我們 頁面"
+msgstr "將顯示於 首頁 及 頁首 及 頁尾 及 聯繫大碩 頁面"
 
 #: ../configlet/company_configlet.py:26
 msgid "Display on Top and Footer and Contact Us Page"
-msgstr "將顯示於 頁首 及 頁尾 及 聯絡我們 頁面"
+msgstr "將顯示於 頁首 及 頁尾 及 聯繫大碩 頁面"
 
 #: ../configlet/company_configlet.py:31
 msgid "E-Mail"
@@ -78,9 +83,9 @@ msgstr ""
 msgid "E-Mail (Receive)"
 msgstr "E-Mail (收信用)"
 
+#: ../profiles/default/types/Banner.xml
 #: ../profiles/default/types/Philosophy.xml
 #: ../profiles/default/types/ProblemTable.xml
-#: ../profiles/default/types/ServiceDescription.xml
 msgid "Edit"
 msgstr ""
 
@@ -127,6 +132,10 @@ msgstr "多少列出的項目數量。"
 #: ../portlets/precent_news.py:55
 msgid "If enabled, the portlet will not show thumbs"
 msgstr ""
+
+#: ../content/banner.py:26
+msgid "Image"
+msgstr "圖片"
 
 #: ../content/service_description.py:36
 msgid "Image description bottom text"
@@ -246,15 +255,15 @@ msgstr ""
 
 #: ../configlet/company_configlet.py:50
 msgid "Used to receive E-Mail from Contact Us Page"
-msgstr "用於收聯絡我們頁面的留言信件"
+msgstr "用於收聯繫大碩頁面的留言信件"
 
 #: ../profiles/default/types/VideoDescription.xml
 msgid "VideoDescription"
 msgstr "影片說明方框"
 
+#: ../profiles/default/types/Banner.xml
 #: ../profiles/default/types/Philosophy.xml
 #: ../profiles/default/types/ProblemTable.xml
-#: ../profiles/default/types/ServiceDescription.xml
 msgid "View"
 msgstr ""
 
@@ -332,6 +341,10 @@ msgstr "一般工廠問題->方法"
 msgid "problem_people"
 msgstr "一般工廠問題->人員"
 
+#: ../content/banner.py:16
+msgid "small text"
+msgstr "輪播小字"
+
 #: ../content/problem_table.py:79
 msgid "smart_EC"
 msgstr "智慧工廠效益->環控"
@@ -359,3 +372,7 @@ msgstr "內文標題圖片"
 #: ../content/philosophy.py:16
 msgid "title"
 msgstr "標題"
+
+#: ../profiles/default/types/Banner.xml
+msgid "used on index"
+msgstr "用於首頁輪播顯示"

@@ -87,7 +87,7 @@ class PloneRootView(GeneralMethod):
         if portal.hasObject('resource'):
             if portal['resource'].hasObject('banner'):
                 context = portal['resource']['banner']
-        banner = api.content.find(context=context, portal_type='Document', sort_on='getObjPositionInParent')
+        banner = api.content.find(context=context, portal_type='Banner', sort_on='getObjPositionInParent')
         return banner
 
     def getIconBox(self):
@@ -116,6 +116,14 @@ class PloneRootView(GeneralMethod):
         performance = api.content.find(context=context, portal_type='Image', sort_on='getObjPositionInParent', b_size='4')
         return performance
     
+    def getServiceIconFolder(self):
+        portal = api.portal.get()
+        context = self.context
+        if portal.hasObject('resource'):
+            if portal['resource'].hasObject('service-icon'):
+                context = portal['resource']['service-icon']
+        return context
+
     def getServiceIcon(self):
         portal = api.portal.get()
         context = self.context
@@ -157,6 +165,14 @@ class ImgView(BrowserView):
 
 
 class FactoryManagementView(BrowserView):
+    def getLargeText(self, text):
+        l_text_start = text.find('<')
+        l_text_end = text.find('>')
+        if l_text_start != -1 and l_text_end != -1:
+            text = text.replace(text[l_text_start: l_text_end+1], \
+                                '<span class="large-text">{}</span>'.format(text[l_text_start+1: l_text_end]))
+        return text
+
     def getVideoDescription(self):
         videoDescription = api.content.find(context=self.context, portal_type="VideoDescription", sort_on='getObjPositionInParent')
         return videoDescription
@@ -175,6 +191,21 @@ class FactoryManagementView(BrowserView):
             for row in t_row:
                 for col in t_col:
                     p_table.append(getattr(problemTable, '_'.join([row,col]) ))
+            return p_table
+        return []
+
+    def getProblemTable_mobile(self):
+        problemTable = api.content.find(context=self.context, portal_type="ProblemTable", sort_on='getObjPositionInParent', b_size="1")
+        p_table = []
+        if len(problemTable) > 0:
+            problemTable = problemTable[0].getObject()
+            t_row    = ['people', 'machine', 'materials', 'method', 'EC']
+            col_name = ['人員'  , '機器'   , '物料'     , '方法'  , '環控']
+            t_col = ['problem', 'smart']
+            for i, row in enumerate(t_row):
+                p_table.append([col_name[i]])
+                for col in t_col:
+                    p_table[i].append(getattr(problemTable, '_'.join([col,row]) ))
             return p_table
         return []
 

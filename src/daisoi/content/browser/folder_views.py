@@ -51,38 +51,34 @@ class FolderPerformanceView(FolderView, GeneralMethod):
         kwargs.setdefault('path', context.absolute_url_path())
         kwargs.setdefault('batch', False)
         
-        if self.img_subject:
-            kwargs['img_subject'] = self.img_subject
-
         listing = aq_inner(self.context).restrictedTraverse(
             '@@folderListing', None)
         if listing is None:
             return []
         results = listing(**kwargs)
         
-        if not self.img_subject:
-            temp_results = []
-            imgSubject = self.getImgSubject().keys()
-            results = list(results[:])
-            while len(results) > 0:
-                for sub in imgSubject:
-                    while True:
-                        if len(results) == 0:
-                            break
-                        index = randint(0, len(results)-1) or 0
-                        randImg = results[index]
-                        if not randImg.img_subject:
-                            temp_results.append(results.pop(index))
-                        if sub in randImg.img_subject:
-                            temp_results.append(results.pop(index))
-                            break
-                        imgSubject = set()
-                        for img in results:
-                            for subject in img.img_subject:
-                                imgSubject.add(subject)
-                        if sub not in imgSubject:
-                            break
-            results = temp_results
+        temp_results = []
+        imgSubject = self.getImgSubject().keys()
+        results = list(results[:])
+        while len(results) > 0:
+            for sub in imgSubject:
+                while True:
+                    if len(results) == 0:
+                        break
+                    index = randint(0, len(results)-1) or 0
+                    randImg = results[index]
+                    if not randImg.img_subject:
+                        temp_results.append(results.pop(index))
+                    if sub in randImg.img_subject:
+                        temp_results.append(results.pop(index))
+                        break
+                    imgSubject = set()
+                    for img in results:
+                        for subject in img.img_subject:
+                            imgSubject.add(subject)
+                    if sub not in imgSubject:
+                        break
+        results = temp_results
                 
         return results
 
