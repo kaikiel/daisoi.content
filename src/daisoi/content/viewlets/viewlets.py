@@ -26,9 +26,6 @@ class TopViewlet(base.ViewletBase, GeneralMethod):
     pass
 
 class FooterViewlet(base.ViewletBase, GeneralMethod):
-    def pdb(self):
-        import pdb;pdb.set_trace()
-
     def getSiteLogo(self):
         return getSiteLogo()
 
