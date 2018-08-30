@@ -5,6 +5,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from daisoi.content import _
 from Products.CMFCore.utils import getToolByName
 from email.mime.text import MIMEText
+from collections import OrderedDict
 
 
 class GeneralMethod(BrowserView):
@@ -22,11 +23,23 @@ class GeneralMethod(BrowserView):
     def getImgSubject(self):
         portal_catalog = getToolByName(self.context, 'portal_catalog')
         index = portal_catalog.Indexes['img_subject']
-        imgSubjectList = {}
+        imgSubjectList = OrderedDict()
+        indexes = []
         for key in index.uniqueValues():
-            subDict = {key:{'Title':key,
-                            'getURL':'{}/performance?img_subject={}'.format(self.context.portal_url(), key),
-                            'absolute_url':'{}/performance?img_subject={}'.format(self.context.portal_url(), key),
+            keySplit = key.split('-')
+            if len(keySplit) != 2:
+                indexes.insert(999, [key, key])
+                continue
+            try:
+                i = int(keySplit[0])
+            except:
+                i=9999
+            indexes.insert(i, [keySplit[1], key])
+
+        for key in indexes:
+            subDict = {key[1]:{'Title':key[0],
+                            'getURL':'{}/performance?img_subject={}'.format(self.context.portal_url(), key[1]),
+                            'absolute_url':'{}/performance?img_subject={}'.format(self.context.portal_url(), key[1]),
                             'children':[]}
                       }
             imgSubjectList.update(subDict)
@@ -229,3 +242,10 @@ class ServiceView(BrowserView):
 class PhilosophyView(BrowserView):
     pass
 
+
+class AdminTest(BrowserView):
+
+    template = ViewPageTemplateFile('templates/admin_test.pt')
+
+    def __call__(self):
+        return self.template()

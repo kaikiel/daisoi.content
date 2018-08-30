@@ -125,4 +125,14 @@
       permission="zope2.View"
       />
 
+<!-- 測試用
+  <browser:page
+      name="admin_test"
+      for="*"
+      class=".views.AdminTest"
+      layer="daisoi.content.interfaces.IDaisoiContentLayer"
+      permission="cmf.ManagePortal"
+      />
+-->
+
 </configure>
